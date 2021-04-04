@@ -25,7 +25,7 @@ class PokemonFactory extends Factory
             'name'=>$this->faker->name(),
             'pokemon_photo_path'=>$this->faker->image(),
             'age'=>$this->faker->numberBetween($min=1, $max=10),
-            'height'=>$this->faker->randomFloat($min=1, $max=10),
+            'height'=>$this->faker->randomFloat($nbMaxDecimals = 3,$min=1, $max=10),
             'evolves_from'=>$this->faker->text(),
             'evolves_to'=>$this->faker->text(),
             'weakness'=>$this->faker->text(),

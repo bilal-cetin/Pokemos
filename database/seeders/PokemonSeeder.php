@@ -13,6 +13,6 @@ class PokemonSeeder extends Seeder
      */
     public function run()
     {
-        //
+        \App\Models\Pokemon::factory(10)->create();
     }
 }
