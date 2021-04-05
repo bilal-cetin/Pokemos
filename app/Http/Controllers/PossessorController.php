@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Possessor;
 
 class PossessorController extends Controller
 {
@@ -13,7 +14,8 @@ class PossessorController extends Controller
      */
     public function index()
     {
-        return "bişiler";
+        $poss= Possessor::paginate(5);
+        return view('possessor.list',compact('poss'));
     }
 
     /**
@@ -23,7 +25,7 @@ class PossessorController extends Controller
      */
     public function create()
     {
-        //
+        return " create fonksiyonu";
     }
 
     /**
