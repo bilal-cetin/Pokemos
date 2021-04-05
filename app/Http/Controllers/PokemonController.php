@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Pokemon;
 
 class PokemonController extends Controller
 {
@@ -13,7 +14,8 @@ class PokemonController extends Controller
      */
     public function index()
     {
-        return "bişiler daha";
+        $pokemons = Pokemon::paginate(5);
+        return view('pokemon.list',compact('pokemons'));
     }
 
     /**
