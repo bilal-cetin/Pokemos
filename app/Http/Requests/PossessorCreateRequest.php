@@ -25,7 +25,7 @@ class PossessorCreateRequest extends FormRequest
     {
         return [
             'name' => 'required|max:40',
-            'images' => 'image | mimes:jpeg,png,jpg',
+            'image' => 'image | mimes:jpeg,png,jpg',
             'age' => 'required|numeric|min:10|max:40',
             'score' => 'required|max:200',
         ];

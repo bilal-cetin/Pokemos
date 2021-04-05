@@ -4,7 +4,7 @@
     </x-slot>
     <div class="card">
         <div class="card-body">
-            <form method="POST" action="{{route('possessors.store')}}">
+            <form method="POST" action="{{route('possessors.store')}}" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
                     <label>Add Photo</label>
