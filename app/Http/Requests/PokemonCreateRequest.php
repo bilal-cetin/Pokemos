@@ -26,7 +26,7 @@ class PokemonCreateRequest extends FormRequest
         return [
             'name' => 'required|max:40',
             'image' => 'image | mimes:jpeg,png,jpg',
-            'age' => 'required|numeric|min:10|max:40',
+            'age' => 'required|numeric|min:1|max:100',
             'height' => 'required|numeric|between:0,10.99',
             'evolves_from'=> 'required|max:40',
             'evolves_to'=> 'required|max:40',
