@@ -25,7 +25,7 @@ class PossessorController extends Controller
      */
     public function create()
     {
-        return " create fonksiyonu";
+        return view('possessor.create');
     }
 
     /**
@@ -36,7 +36,7 @@ class PossessorController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return $request->post();
     }
 
     /**
