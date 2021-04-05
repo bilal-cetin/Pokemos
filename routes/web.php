@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\PossessorController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PossessorController;
+use App\Http\Controllers\PokemonController;
 
 
 /*
@@ -23,4 +24,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::resource('possessors', PossessorController::class);
+Route::resources([
+    'possessors' => PossessorController::class,
+    'pokemons' => PokemonController::class,
+]);
