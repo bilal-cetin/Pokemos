@@ -23,7 +23,7 @@ class PokemonFactory extends Factory
     {
         return [
             'name'=>$this->faker->name(),
-            'pokemon_photo_path'=>$this->faker->image(),
+            'image'=>$this->faker->imageUrl($width = 50, $height = 40),
             'age'=>$this->faker->numberBetween($min=1, $max=10),
             'height'=>$this->faker->randomFloat($nbMaxDecimals = 3,$min=1, $max=10),
             'evolves_from'=>$this->faker->text(),

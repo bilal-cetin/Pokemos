@@ -20,7 +20,7 @@
                 <tbody>
                     @foreach($poss as $pos)
                   <tr>
-                    <th>{{$pos->possessor_photo_path}}</th>
+                    <th><img src="{{$pos->image}}"/></th>
                     <td>{{$pos->name}}</td>
                     <td>{{$pos->age}}</td>
                     <td>{{$pos->score}}</td>

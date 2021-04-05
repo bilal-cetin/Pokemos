@@ -16,7 +16,7 @@ class PossessorMigration extends Migration
         Schema::create('possessors', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->text('possessor_photo_path');
+            $table->longText('image');
             $table->integer('age');
             $table->integer('score');
             $table->timestamps();

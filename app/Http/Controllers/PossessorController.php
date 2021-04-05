@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Possessor;
+use App\Http\Requests\PossessorCreateRequest;
 
 class PossessorController extends Controller
 {
@@ -34,7 +35,7 @@ class PossessorController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PossessorCreateRequest $request)
     {
         return $request->post();
     }

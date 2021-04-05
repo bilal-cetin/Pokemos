@@ -23,7 +23,7 @@ class PossessorFactory extends Factory
     {
         return [
             'name'=>$this->faker->name(),
-            'possessor_photo_path'=>$this->faker->image(),
+            'image'=>$this->faker->imageUrl($width = 50, $height = 40),
             'age'=>$this->faker->numberBetween($min=1, $max=30),
             'score'=>$this->faker->numberBetween($min=1, $max=200)
         ];
