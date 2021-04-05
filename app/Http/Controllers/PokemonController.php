@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Pokemon;
+use App\Http\Requests\PokemonCreateRequest;
 
 class PokemonController extends Controller
 {
@@ -34,7 +35,7 @@ class PokemonController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PokemonCreateRequest $request)
     {
         return $request->post();
     }
