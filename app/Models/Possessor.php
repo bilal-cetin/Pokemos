@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Possessor extends Model
 {
     use HasFactory;
+
+    protected $fillable=['name','image','age','score'];
 }
