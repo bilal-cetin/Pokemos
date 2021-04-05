@@ -25,7 +25,7 @@ class PokemonController extends Controller
      */
     public function create()
     {
-        //
+        return view('pokemon.create');
     }
 
     /**
@@ -36,7 +36,7 @@ class PokemonController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return $request->post();
     }
 
     /**

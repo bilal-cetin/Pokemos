@@ -6,7 +6,7 @@
     <div class="card">
         <div class="card-body">
             <h5 class="card-title">
-                   <a href="{{route('pokemons.create')}}" class="btn btn-sm btn-primary">Add Possessor</a> 
+                   <a href="{{route('pokemons.create')}}" class="btn btn-sm btn-primary">Add Pokemon</a> 
             </h5>
             <table class="table table-bordered">
                 <thead>

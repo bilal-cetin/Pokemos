@@ -16,7 +16,7 @@ class PokemonMigration extends Migration
         Schema::create('pokemon', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->longText('image');
+            $table->longText('image')->default('');
             $table->integer('age');
             $table->float('height');
             $table->string('evolves_from');
